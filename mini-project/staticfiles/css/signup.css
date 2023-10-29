@@ -18,7 +18,7 @@
 
 html,
 body {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -204,6 +204,49 @@ body {
     right: 50%;
 }
 
+
+/* message block */
+
+/* Style the entire message block */
+ul.messages {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    transition: 300ms ease;
+}
+
+/* Style individual message items based on their type */
+ul.messages li {
+    width: 100%;
+    height: 90px;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+ul.messages .success {
+    background-color: #5cb85c; /* Green for success messages */
+    color: #fff;
+}
+
+ul.messages .info {
+    background-color: #5bc0de; /* Blue for info messages */
+    color: #fff;
+}
+
+ul.messages .warning {
+    background-color: #f0ad4e; /* Orange for warning messages */
+    color: #fff;
+}
+
+ul.messages .error {
+    background-color: #d9534f; /* Red for error messages */
+    color: #fff;
+}
 
 
 
